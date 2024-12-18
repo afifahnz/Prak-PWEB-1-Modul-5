@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PostTest No.2</title>
+        <script src="../../JS/jquery-3.7.1.js"></script>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            }
+            #fakultas {
+            font-size: 20px;
+            margin-bottom: 20px;
+            }
+            input[type="text"] {
+            font-size: 18px;
+            padding: 5px;
+            width: 300px;
+            }
+            button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ubah Isi dengan jQuery</h1>
+        <div id="fakultas">FKOM</div>
+        <input type="text" id="universitas" value="UNIKU">
+        <button id="ubah">Ubah Isi</button>
+
+        <script>
+            $(document).ready(function () {
+                // Event ketika tombol diklik
+                $("#ubah").on("click", function () {
+                    // Mengubah isi div dengan id "fakultas"
+                    $("#fakultas").text("Fakultas Ilmu Komputer");
+
+                    // Mengubah nilai input text dengan id "universitas"
+                    $("#universitas").val("Universitas Kuningan");
+                });
+            });
+        </script>
+    </body>
+</html>
